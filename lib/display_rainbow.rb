@@ -1,4 +1,12 @@
 # Write your #display_rainbow method here
 def display_rainbow(colors)
-  puts "#{colors[0][0].upcase}: #{colors[0]}, O: #{colors[1]}, Y: #{colors[2]}, G: #{colors[3]}, B: #{colors[4]}, I: #{colors[5]}, V: #{colors[6]}"
+  answer = ""
+  colors.each do |color|
+    if answer.blank?
+      answer = "#{color[0].upcase}: #{color}"
+    else
+      answer = answer + ", #{color[0].upcase}: #{color}"
+    end
+  end
+  answer
 end
