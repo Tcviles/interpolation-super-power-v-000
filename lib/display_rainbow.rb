@@ -2,7 +2,7 @@
 def display_rainbow(colors)
   answer = ""
   colors.each do |color|
-    if answer.blank?
+    if answer.empty?
       answer = "#{color[0].upcase}: #{color}"
     else
       answer = answer + ", #{color[0].upcase}: #{color}"
