@@ -8,5 +8,5 @@ def display_rainbow(colors)
       answer = answer + ", #{color[0].upcase}: #{color}"
     end
   end
-  answer
+  return answer
 end
